@@ -22,7 +22,7 @@ pod 'YDRootNavigationController'
 
 ## Author
 
-heroyoungday, huangyongdong@vv.cn
+jsone, heroyoungday@gmail.com
 
 ## License
 
