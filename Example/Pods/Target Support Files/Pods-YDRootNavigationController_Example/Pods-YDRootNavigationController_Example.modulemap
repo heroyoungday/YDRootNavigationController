@@ -1,0 +1,6 @@
+framework module Pods_YDRootNavigationController_Example {
+  umbrella header "Pods-YDRootNavigationController_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

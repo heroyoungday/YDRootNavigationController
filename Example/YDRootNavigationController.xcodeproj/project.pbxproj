@@ -14,6 +14,19 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		BF8556D02BA7F4B700A2B5C0 /* MyAppAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556CF2BA7F4B700A2B5C0 /* MyAppAppearance.swift */; };
+		BF8556DE2BA7F4E500A2B5C0 /* BackItemTypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556D22BA7F4E500A2B5C0 /* BackItemTypeController.swift */; };
+		BF8556DF2BA7F4E500A2B5C0 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556D32BA7F4E500A2B5C0 /* StatusBarController.swift */; };
+		BF8556E02BA7F4E500A2B5C0 /* ExamplesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556D42BA7F4E500A2B5C0 /* ExamplesController.swift */; };
+		BF8556E12BA7F4E500A2B5C0 /* BackItemActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556D52BA7F4E500A2B5C0 /* BackItemActionController.swift */; };
+		BF8556E22BA7F4E500A2B5C0 /* TitleTextAttributesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556D62BA7F4E500A2B5C0 /* TitleTextAttributesController.swift */; };
+		BF8556E32BA7F4E500A2B5C0 /* IsHidesBottomBarWhenPushedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556D72BA7F4E500A2B5C0 /* IsHidesBottomBarWhenPushedController.swift */; };
+		BF8556E42BA7F4E500A2B5C0 /* InteractivePopGestureEnabledController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556D82BA7F4E500A2B5C0 /* InteractivePopGestureEnabledController.swift */; };
+		BF8556E52BA7F4E500A2B5C0 /* FullScreenPopGestureEnabledController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556D92BA7F4E500A2B5C0 /* FullScreenPopGestureEnabledController.swift */; };
+		BF8556E62BA7F4E500A2B5C0 /* IsHidesBackItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556DA2BA7F4E500A2B5C0 /* IsHidesBackItemController.swift */; };
+		BF8556E72BA7F4E500A2B5C0 /* PrefersNavigationBarHiddenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556DB2BA7F4E500A2B5C0 /* PrefersNavigationBarHiddenController.swift */; };
+		BF8556E82BA7F4E500A2B5C0 /* ShadowColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556DC2BA7F4E500A2B5C0 /* ShadowColorController.swift */; };
+		BF8556E92BA7F4E500A2B5C0 /* BackgroundColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556DD2BA7F4E500A2B5C0 /* BackgroundColorController.swift */; };
 		FAC4AB760C1D7CF312576465 /* Pods_YDRootNavigationController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A67209A410C72B20359EC0 /* Pods_YDRootNavigationController_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +42,10 @@
 
 /* Begin PBXFileReference section */
 		018E9EBD09A46081F89F3E9D /* Pods_YDRootNavigationController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDRootNavigationController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		07BD97C1A3542F4E493AE09A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		0E9E8E1AF57F8C74DF566911 /* YDRootNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YDRootNavigationController.podspec; path = ../YDRootNavigationController.podspec; sourceTree = "<group>"; };
+		07BD97C1A3542F4E493AE09A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0E9E8E1AF57F8C74DF566911 /* YDRootNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YDRootNavigationController.podspec; path = ../YDRootNavigationController.podspec; sourceTree = "<group>"; };
 		14E0127D785917BD09B42EDD /* Pods-YDRootNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDRootNavigationController_Example.release.xcconfig"; path = "Target Support Files/Pods-YDRootNavigationController_Example/Pods-YDRootNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		174B963A06A74F3E680AF6FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		174B963A06A74F3E680AF6FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YDRootNavigationController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDRootNavigationController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +59,19 @@
 		64A67209A410C72B20359EC0 /* Pods_YDRootNavigationController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDRootNavigationController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68E4A0ED00CE553509A8C9D5 /* Pods-YDRootNavigationController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDRootNavigationController_Tests.release.xcconfig"; path = "Target Support Files/Pods-YDRootNavigationController_Tests/Pods-YDRootNavigationController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A06112617D4A29BFCACE6FAA /* Pods-YDRootNavigationController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDRootNavigationController_Example.debug.xcconfig"; path = "Target Support Files/Pods-YDRootNavigationController_Example/Pods-YDRootNavigationController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8556CF2BA7F4B700A2B5C0 /* MyAppAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyAppAppearance.swift; sourceTree = "<group>"; };
+		BF8556D22BA7F4E500A2B5C0 /* BackItemTypeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackItemTypeController.swift; sourceTree = "<group>"; };
+		BF8556D32BA7F4E500A2B5C0 /* StatusBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		BF8556D42BA7F4E500A2B5C0 /* ExamplesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExamplesController.swift; sourceTree = "<group>"; };
+		BF8556D52BA7F4E500A2B5C0 /* BackItemActionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackItemActionController.swift; sourceTree = "<group>"; };
+		BF8556D62BA7F4E500A2B5C0 /* TitleTextAttributesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleTextAttributesController.swift; sourceTree = "<group>"; };
+		BF8556D72BA7F4E500A2B5C0 /* IsHidesBottomBarWhenPushedController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsHidesBottomBarWhenPushedController.swift; sourceTree = "<group>"; };
+		BF8556D82BA7F4E500A2B5C0 /* InteractivePopGestureEnabledController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractivePopGestureEnabledController.swift; sourceTree = "<group>"; };
+		BF8556D92BA7F4E500A2B5C0 /* FullScreenPopGestureEnabledController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPopGestureEnabledController.swift; sourceTree = "<group>"; };
+		BF8556DA2BA7F4E500A2B5C0 /* IsHidesBackItemController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsHidesBackItemController.swift; sourceTree = "<group>"; };
+		BF8556DB2BA7F4E500A2B5C0 /* PrefersNavigationBarHiddenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefersNavigationBarHiddenController.swift; sourceTree = "<group>"; };
+		BF8556DC2BA7F4E500A2B5C0 /* ShadowColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowColorController.swift; sourceTree = "<group>"; };
+		BF8556DD2BA7F4E500A2B5C0 /* BackgroundColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorController.swift; sourceTree = "<group>"; };
 		EE8A537E056DF8EFA4FFEFBC /* Pods-YDRootNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDRootNavigationController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YDRootNavigationController_Tests/Pods-YDRootNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +119,7 @@
 		607FACD21AFB9204008FA782 /* Example for YDRootNavigationController */ = {
 			isa = PBXGroup;
 			children = (
+				BF8556CD2BA7F44700A2B5C0 /* Section */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -156,8 +183,43 @@
 				EE8A537E056DF8EFA4FFEFBC /* Pods-YDRootNavigationController_Tests.debug.xcconfig */,
 				68E4A0ED00CE553509A8C9D5 /* Pods-YDRootNavigationController_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF8556CD2BA7F44700A2B5C0 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				BF8556CE2BA7F45700A2B5C0 /* Utils */,
+				BF8556D12BA7F4C000A2B5C0 /* ViewController */,
+			);
+			name = Section;
+			sourceTree = "<group>";
+		};
+		BF8556CE2BA7F45700A2B5C0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF8556CF2BA7F4B700A2B5C0 /* MyAppAppearance.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		BF8556D12BA7F4C000A2B5C0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BF8556D42BA7F4E500A2B5C0 /* ExamplesController.swift */,
+				BF8556DD2BA7F4E500A2B5C0 /* BackgroundColorController.swift */,
+				BF8556D52BA7F4E500A2B5C0 /* BackItemActionController.swift */,
+				BF8556D22BA7F4E500A2B5C0 /* BackItemTypeController.swift */,
+				BF8556D92BA7F4E500A2B5C0 /* FullScreenPopGestureEnabledController.swift */,
+				BF8556D82BA7F4E500A2B5C0 /* InteractivePopGestureEnabledController.swift */,
+				BF8556DA2BA7F4E500A2B5C0 /* IsHidesBackItemController.swift */,
+				BF8556D72BA7F4E500A2B5C0 /* IsHidesBottomBarWhenPushedController.swift */,
+				BF8556DB2BA7F4E500A2B5C0 /* PrefersNavigationBarHiddenController.swift */,
+				BF8556DC2BA7F4E500A2B5C0 /* ShadowColorController.swift */,
+				BF8556D32BA7F4E500A2B5C0 /* StatusBarController.swift */,
+				BF8556D62BA7F4E500A2B5C0 /* TitleTextAttributesController.swift */,
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +290,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -350,8 +413,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF8556E22BA7F4E500A2B5C0 /* TitleTextAttributesController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				BF8556E42BA7F4E500A2B5C0 /* InteractivePopGestureEnabledController.swift in Sources */,
+				BF8556E62BA7F4E500A2B5C0 /* IsHidesBackItemController.swift in Sources */,
+				BF8556E12BA7F4E500A2B5C0 /* BackItemActionController.swift in Sources */,
+				BF8556E52BA7F4E500A2B5C0 /* FullScreenPopGestureEnabledController.swift in Sources */,
+				BF8556DE2BA7F4E500A2B5C0 /* BackItemTypeController.swift in Sources */,
+				BF8556E32BA7F4E500A2B5C0 /* IsHidesBottomBarWhenPushedController.swift in Sources */,
+				BF8556E92BA7F4E500A2B5C0 /* BackgroundColorController.swift in Sources */,
+				BF8556E02BA7F4E500A2B5C0 /* ExamplesController.swift in Sources */,
+				BF8556D02BA7F4B700A2B5C0 /* MyAppAppearance.swift in Sources */,
+				BF8556DF2BA7F4E500A2B5C0 /* StatusBarController.swift in Sources */,
+				BF8556E82BA7F4E500A2B5C0 /* ShadowColorController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				BF8556E72BA7F4E500A2B5C0 /* PrefersNavigationBarHiddenController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YDRootNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -513,6 +590,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = YDRootNavigationController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -535,6 +613,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -553,6 +632,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

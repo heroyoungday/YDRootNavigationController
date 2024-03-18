@@ -1,0 +1,31 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - YDRootNavigationController (0.1.0):
+    - YDRootNavigationController/File (= 0.1.0)
+  - YDRootNavigationController/File (0.1.0):
+    - YDRootNavigationController/Resources
+  - YDRootNavigationController/Resources (0.1.0)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase (~> 2.1.4)
+  - YDRootNavigationController (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  YDRootNavigationController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  YDRootNavigationController: bf2dea6d24dc051ef2b22ca234c889cb9199d56a
+
+PODFILE CHECKSUM: 27a2d5a22db670cd8c691e80f1565d25fe1d9c87
+
+COCOAPODS: 1.13.0
