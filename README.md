@@ -19,6 +19,9 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'YDRootNavigationController'
 ```
+## Usage
+![scrreecap](./ScreenShot/返回手势.gif)
+
 
 ## Author
 
