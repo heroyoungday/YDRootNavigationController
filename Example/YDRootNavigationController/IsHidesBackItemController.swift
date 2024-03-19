@@ -14,7 +14,7 @@ class IsHidesBackItemController: UIViewController {
     var isHiddenBackItem: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "First"
+        title = "isHidesBackItem"
         // Do any additional setup after loading the view.
     }
     

@@ -39,7 +39,7 @@ class ExamplesController: UITableViewController {
         // #warning Incomplete implementation, return the number of rows
         switch section {
         case 0:
-            return 5
+            return 6
         case 1:
             return 5
         default:

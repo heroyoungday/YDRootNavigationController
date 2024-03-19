@@ -27,6 +27,8 @@
 		BF8556E72BA7F4E500A2B5C0 /* PrefersNavigationBarHiddenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556DB2BA7F4E500A2B5C0 /* PrefersNavigationBarHiddenController.swift */; };
 		BF8556E82BA7F4E500A2B5C0 /* ShadowColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556DC2BA7F4E500A2B5C0 /* ShadowColorController.swift */; };
 		BF8556E92BA7F4E500A2B5C0 /* BackgroundColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8556DD2BA7F4E500A2B5C0 /* BackgroundColorController.swift */; };
+		BF85572F2BA967EC00A2B5C0 /* FullScreenPopGestureEnabledController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85572D2BA967EC00A2B5C0 /* FullScreenPopGestureEnabledController.swift */; };
+		BF8557302BA967EC00A2B5C0 /* InteractivePopGestureEnabledController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF85572E2BA967EC00A2B5C0 /* InteractivePopGestureEnabledController.swift */; };
 		FAC4AB760C1D7CF312576465 /* Pods_YDRootNavigationController_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64A67209A410C72B20359EC0 /* Pods_YDRootNavigationController_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +45,7 @@
 /* Begin PBXFileReference section */
 		018E9EBD09A46081F89F3E9D /* Pods_YDRootNavigationController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YDRootNavigationController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07BD97C1A3542F4E493AE09A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		0E9E8E1AF57F8C74DF566911 /* YDRootNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YDRootNavigationController.podspec; path = ../YDRootNavigationController.podspec; sourceTree = "<group>"; };
+		0E9E8E1AF57F8C74DF566911 /* YDRootNavigationController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YDRootNavigationController.podspec; path = ../YDRootNavigationController.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		14E0127D785917BD09B42EDD /* Pods-YDRootNavigationController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDRootNavigationController_Example.release.xcconfig"; path = "Target Support Files/Pods-YDRootNavigationController_Example/Pods-YDRootNavigationController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		174B963A06A74F3E680AF6FA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* YDRootNavigationController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YDRootNavigationController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +74,8 @@
 		BF8556DB2BA7F4E500A2B5C0 /* PrefersNavigationBarHiddenController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrefersNavigationBarHiddenController.swift; sourceTree = "<group>"; };
 		BF8556DC2BA7F4E500A2B5C0 /* ShadowColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowColorController.swift; sourceTree = "<group>"; };
 		BF8556DD2BA7F4E500A2B5C0 /* BackgroundColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundColorController.swift; sourceTree = "<group>"; };
+		BF85572D2BA967EC00A2B5C0 /* FullScreenPopGestureEnabledController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FullScreenPopGestureEnabledController.swift; sourceTree = "<group>"; };
+		BF85572E2BA967EC00A2B5C0 /* InteractivePopGestureEnabledController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractivePopGestureEnabledController.swift; sourceTree = "<group>"; };
 		EE8A537E056DF8EFA4FFEFBC /* Pods-YDRootNavigationController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YDRootNavigationController_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YDRootNavigationController_Tests/Pods-YDRootNavigationController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +210,8 @@
 		BF8556D12BA7F4C000A2B5C0 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BF85572D2BA967EC00A2B5C0 /* FullScreenPopGestureEnabledController.swift */,
+				BF85572E2BA967EC00A2B5C0 /* InteractivePopGestureEnabledController.swift */,
 				BF8556D42BA7F4E500A2B5C0 /* ExamplesController.swift */,
 				BF8556DD2BA7F4E500A2B5C0 /* BackgroundColorController.swift */,
 				BF8556D52BA7F4E500A2B5C0 /* BackItemActionController.swift */,
@@ -419,9 +425,11 @@
 				BF8556E62BA7F4E500A2B5C0 /* IsHidesBackItemController.swift in Sources */,
 				BF8556E12BA7F4E500A2B5C0 /* BackItemActionController.swift in Sources */,
 				BF8556E52BA7F4E500A2B5C0 /* FullScreenPopGestureEnabledController.swift in Sources */,
+				BF85572F2BA967EC00A2B5C0 /* FullScreenPopGestureEnabledController.swift in Sources */,
 				BF8556DE2BA7F4E500A2B5C0 /* BackItemTypeController.swift in Sources */,
 				BF8556E32BA7F4E500A2B5C0 /* IsHidesBottomBarWhenPushedController.swift in Sources */,
 				BF8556E92BA7F4E500A2B5C0 /* BackgroundColorController.swift in Sources */,
+				BF8557302BA967EC00A2B5C0 /* InteractivePopGestureEnabledController.swift in Sources */,
 				BF8556E02BA7F4E500A2B5C0 /* ExamplesController.swift in Sources */,
 				BF8556D02BA7F4B700A2B5C0 /* MyAppAppearance.swift in Sources */,
 				BF8556DF2BA7F4E500A2B5C0 /* StatusBarController.swift in Sources */,

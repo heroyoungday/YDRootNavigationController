@@ -16,7 +16,7 @@ class TitleTextAttributesController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "TitleText"
+        title = "titleTextAttributes"
         // Do any additional setup after loading the view.
     }
     

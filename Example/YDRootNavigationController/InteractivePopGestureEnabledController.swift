@@ -22,6 +22,7 @@ class InteractivePopGestureEnabledController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "isInteractivePopGestureEnabled"
         interactivePopGestureEnabledSwitch.isOn = interactivePopGesture
     }
     

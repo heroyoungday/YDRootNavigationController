@@ -48,7 +48,7 @@
         <!--Examples Controller-->
         <scene sceneID="iLO-yY-KfY">
             <objects>
-                <tableViewController id="7A5-YE-cQm" customClass="ExamplesController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="7A5-YE-cQm" customClass="ExamplesController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="cbZ-YL-NsF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,7 +220,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="eVM-hZ-Ju2" kind="show" id="7Kk-am-64C"/>
+                                            <segue destination="eVM-hZ-Ju2" kind="show" id="HyJ-ks-RcE"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="bXJ-rV-a6A">
@@ -386,7 +386,7 @@
         <!--Interactive Pop Gesture Enabled Controller-->
         <scene sceneID="flD-ob-x7B">
             <objects>
-                <viewController id="Di4-Cn-cpU" customClass="InteractivePopGestureEnabledController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Di4-Cn-cpU" customClass="InteractivePopGestureEnabledController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EZE-en-fHp"/>
                         <viewControllerLayoutGuide type="bottom" id="adI-Pf-tTs"/>
@@ -443,7 +443,7 @@
         <!--Prefers Navigation Bar Hidden Controller-->
         <scene sceneID="Woh-dK-IVG">
             <objects>
-                <viewController id="lWU-OA-fGT" customClass="PrefersNavigationBarHiddenController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lWU-OA-fGT" customClass="PrefersNavigationBarHiddenController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bMP-G1-RAp"/>
                         <viewControllerLayoutGuide type="bottom" id="fvU-qe-shJ"/>
@@ -462,7 +462,7 @@
         <!--Is Hides Bottom Bar When Pushed Controller-->
         <scene sceneID="TSs-Tl-0nD">
             <objects>
-                <viewController id="dEd-sA-Kiy" customClass="IsHidesBottomBarWhenPushedController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dEd-sA-Kiy" customClass="IsHidesBottomBarWhenPushedController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0vg-bn-wln"/>
                         <viewControllerLayoutGuide type="bottom" id="y1T-Oq-YgG"/>
@@ -481,7 +481,7 @@
         <!--Shadow Color Controller-->
         <scene sceneID="AWk-y4-oMx">
             <objects>
-                <viewController id="HoW-w7-GFu" customClass="ShadowColorController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HoW-w7-GFu" customClass="ShadowColorController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cqk-3N-jl1"/>
                         <viewControllerLayoutGuide type="bottom" id="Hgv-d1-BcO"/>
@@ -500,7 +500,7 @@
         <!--Is Hides Back Item Controller-->
         <scene sceneID="O88-vm-12T">
             <objects>
-                <viewController id="BCf-D7-Lfd" customClass="IsHidesBackItemController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BCf-D7-Lfd" customClass="IsHidesBackItemController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xn7-Nm-Qbt"/>
                         <viewControllerLayoutGuide type="bottom" id="UE9-7A-UV2"/>
@@ -519,7 +519,7 @@
         <!--Title Text Attributes Controller-->
         <scene sceneID="gf4-HR-F8C">
             <objects>
-                <viewController id="ozK-rY-Upl" customClass="TitleTextAttributesController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ozK-rY-Upl" customClass="TitleTextAttributesController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uyc-Vj-rhM"/>
                         <viewControllerLayoutGuide type="bottom" id="s4n-58-ZbQ"/>
@@ -538,7 +538,7 @@
         <!--Back Item Action Controller-->
         <scene sceneID="WVJ-SB-GgX">
             <objects>
-                <viewController id="eVM-hZ-Ju2" customClass="BackItemActionController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eVM-hZ-Ju2" customClass="BackItemActionController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YMp-Sd-fMJ"/>
                         <viewControllerLayoutGuide type="bottom" id="1g1-ct-fVS"/>
@@ -557,7 +557,7 @@
         <!--Background Color Controller-->
         <scene sceneID="a73-r6-ScT">
             <objects>
-                <viewController id="1Xa-1c-gpG" customClass="BackgroundColorController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="1Xa-1c-gpG" customClass="BackgroundColorController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RJz-No-TDu"/>
                         <viewControllerLayoutGuide type="bottom" id="Br1-FO-mDl"/>
@@ -594,7 +594,7 @@
         <!--Status Bar Controller-->
         <scene sceneID="rZ3-wx-zbA">
             <objects>
-                <viewController id="qJd-f2-JyV" customClass="StatusBarController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qJd-f2-JyV" customClass="StatusBarController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HAp-3P-hld"/>
                         <viewControllerLayoutGuide type="bottom" id="8en-HH-vEN"/>
@@ -683,7 +683,7 @@
         <!--Back Item Type Controller-->
         <scene sceneID="Q1v-Qy-5yb">
             <objects>
-                <tableViewController id="YqE-fI-7p2" customClass="BackItemTypeController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="YqE-fI-7p2" customClass="BackItemTypeController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="hV9-Js-2Zb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -788,7 +788,7 @@
         <!--Full Screen Pop Gesture Enabled Controller-->
         <scene sceneID="bfA-5M-Ukt">
             <objects>
-                <viewController id="umn-6g-hIf" customClass="FullScreenPopGestureEnabledController" customModule="YDNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="umn-6g-hIf" customClass="FullScreenPopGestureEnabledController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="n8b-nf-Nod"/>
                         <viewControllerLayoutGuide type="bottom" id="j34-zs-Y5m"/>

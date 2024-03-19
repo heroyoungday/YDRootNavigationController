@@ -14,6 +14,7 @@ class PrefersNavigationBarHiddenController: UIViewController {
     var isHiddenNavigationBar: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "prefersNavigationBarHidden"
         view.backgroundColor = .randomColor
         // Do any additional setup after loading the view.
     }

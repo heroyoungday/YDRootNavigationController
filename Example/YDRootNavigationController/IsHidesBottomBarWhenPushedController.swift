@@ -14,7 +14,7 @@ class IsHidesBottomBarWhenPushedController: UIViewController {
     var isHiddenBottomBarWhenPushed: Bool = true
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        title = "isHidesBottomBarWhenPushed"
         // Do any additional setup after loading the view.
     }
     

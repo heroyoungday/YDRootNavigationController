@@ -16,7 +16,7 @@ class BackgroundColorController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "backgroundColor"
         // Do any additional setup after loading the view.
     }
     

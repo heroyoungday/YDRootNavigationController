@@ -19,6 +19,7 @@ class FullScreenPopGestureEnabledController: UIViewController {
     @IBOutlet weak var fullScreenPopGestureEnabledSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "isFullScreenPopGestureEnabled"
         fullScreenPopGestureEnabledSwitch.isOn = fullScreenPopGesture
         // Do any additional setup after loading the view.
     }
