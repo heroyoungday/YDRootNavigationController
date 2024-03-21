@@ -67,9 +67,11 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     }
 }
 ```
+
 * 视图控制器自定义样式配置（View controller custom style configuration）
 
-1.导航栏控制器设置为YDRootNavigationController或继承YDRootNavigationController的类
+1. 导航栏控制器设置为YDRootNavigationController或继承YDRootNavigationController的类
+
 -代码
 
 ```swift
@@ -82,7 +84,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 
 ![scrreecap](./ScreenShot/IB设置YDRootNavigationController.gif)
 
-1.导航栏样式配置
+1. 导航栏样式配置
 
 ```swift
 class ViewController: UIViewController {
@@ -94,12 +96,15 @@ class ViewController: UIViewController {
 ```
 
 标题文字属性
+
 ![scrreecap](./ScreenShot/标题文字属性.gif)
 
 导航栏背景颜色
+
 ![scrreecap](./ScreenShot/导航栏背景颜色.gif)
 
 导航栏阴影
+
 ![scrreecap](./ScreenShot/导航栏阴影.gif)
 
 2.自定义返回按钮点击事件
