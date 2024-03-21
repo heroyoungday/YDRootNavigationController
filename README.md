@@ -44,7 +44,8 @@ it, simply add the following line to your Podfile:
 pod 'YDRootNavigationController'
 ```
 ## Usage
-#####全局默认样式配置（Global default style configuration）
+*全局默认样式配置（Global default style configuration）
+
 1.创建一个类用来实现YDAppAppearanceProtocol协议
 ```swift
 class MyAppAppearance: YDAppAppearanceProtocol {
@@ -65,7 +66,8 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     }
 }
 ```
-#####视图控制器自定义样式配置（View controller custom style configuration）
+*视图控制器自定义样式配置（View controller custom style configuration）
+
 1.导航栏控制器设置为YDRootNavigationController或继承YDRootNavigationController的类
 -代码
 ```swift
@@ -111,7 +113,7 @@ class ViewController: UIViewController {
 ```
 ![scrreecap](./ScreenShot/返回按钮隐藏.gif)
 
-#####原生返回手势（Native pop gesture）
+*原生返回手势（Native pop gesture）
 ```swift
 class ViewController: UIViewController {
     // 默认设置
@@ -125,7 +127,7 @@ class ViewController: UIViewController {
 }
 ```
 ![scrreecap](./ScreenShot/返回手势.gif)
-#####全屏返回手势（Full Screen pop gesture）
+*全屏返回手势（Full Screen pop gesture）
 ```swift
 class ViewController: UIViewController {
     // 默认设置
@@ -139,14 +141,14 @@ class ViewController: UIViewController {
 }
 ```
 ![scrreecap](./ScreenShot/全屏返回手势.gif)
-#####导航栏隐藏（Navigation bar hidden）
+*导航栏隐藏（Navigation bar hidden）
 ```swift
 class ViewController: UIViewController {
     override var prefersNavigationBarHidden: Bool { true }
 }
 ```
 ![scrreecap](./ScreenShot/隐藏导航栏.gif)
-#####push时标签栏隐藏（is Hides Bottom Bar When Pushed）
+*push时标签栏隐藏（is Hides Bottom Bar When Pushed）
 ```swift
 class ViewController: UIViewController {
     override var isHidesBottomBarWhenPushed: Bool { true }
@@ -154,7 +156,7 @@ class ViewController: UIViewController {
 ```
 ![scrreecap](./ScreenShot/标签栏隐藏.gif)
 
-#####状态栏设置（Status bar settings）
+*状态栏设置（Status bar settings）
 ```swift
 class ViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle { .default }
