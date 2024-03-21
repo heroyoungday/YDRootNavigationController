@@ -20,6 +20,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="ax9-kg-enz" kind="relationship" relationship="viewControllers" id="kSB-WG-TyQ"/>
+                        <segue destination="PTU-UJ-ydz" kind="relationship" relationship="viewControllers" id="Wb4-e7-WSs"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNi-m1-KFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -438,7 +439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XrI-fj-ae6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1162" y="767"/>
+            <point key="canvasLocation" x="2100" y="766.86656671664173"/>
         </scene>
         <!--Prefers Navigation Bar Hidden Controller-->
         <scene sceneID="Woh-dK-IVG">
@@ -457,7 +458,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jNU-4X-YEy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2385" y="767"/>
+            <point key="canvasLocation" x="3324" y="766.86656671664173"/>
         </scene>
         <!--Is Hides Bottom Bar When Pushed Controller-->
         <scene sceneID="TSs-Tl-0nD">
@@ -476,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S0z-zj-Wbc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2996" y="767"/>
+            <point key="canvasLocation" x="3935.1999999999998" y="766.86656671664173"/>
         </scene>
         <!--Shadow Color Controller-->
         <scene sceneID="AWk-y4-oMx">
@@ -514,7 +515,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1uS-II-Iwl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3610" y="767"/>
+            <point key="canvasLocation" x="4548" y="766.86656671664173"/>
         </scene>
         <!--Title Text Attributes Controller-->
         <scene sceneID="gf4-HR-F8C">
@@ -573,10 +574,10 @@
             </objects>
             <point key="canvasLocation" x="3932" y="-36"/>
         </scene>
-        <!--View Controller-->
+        <!--Folder Controller-->
         <scene sceneID="IMp-Pe-hmm">
             <objects>
-                <viewController id="1oo-4X-4D7" sceneMemberID="viewController">
+                <viewController id="1oo-4X-4D7" customClass="FolderController" customModule="YDRootNavigationController_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="d8X-2m-Jji"/>
                         <viewControllerLayoutGuide type="bottom" id="Juj-An-zoO"/>
@@ -584,12 +585,29 @@
                     <view key="view" contentMode="scaleToFill" id="rLQ-b4-kmu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0iN-hF-1iF">
+                                <rect key="frame" x="67.5" y="211" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="JiL-dm-Res"/>
+                                    <constraint firstAttribute="width" constant="240" id="tww-Ls-XYU"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0iN-hF-1iF" firstAttribute="top" secondItem="d8X-2m-Jji" secondAttribute="bottom" constant="147" id="6Ik-KH-a6x"/>
+                            <constraint firstItem="0iN-hF-1iF" firstAttribute="centerX" secondItem="rLQ-b4-kmu" secondAttribute="centerX" id="jCh-0M-qHU"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ibR-6h-Yhz"/>
+                    <connections>
+                        <outlet property="imageView" destination="0iN-hF-1iF" id="K6K-vy-alX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9W-L5-LZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6462" y="753"/>
+            <point key="canvasLocation" x="912.79999999999995" y="854.1229385307347"/>
         </scene>
         <!--Status Bar Controller-->
         <scene sceneID="rZ3-wx-zbA">
@@ -783,7 +801,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yo0-Iq-RUl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4351" y="763"/>
+            <point key="canvasLocation" x="5288.8000000000002" y="762.36881559220399"/>
         </scene>
         <!--Full Screen Pop Gesture Enabled Controller-->
         <scene sceneID="bfA-5M-Ukt">
@@ -829,10 +847,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IES-LS-Vwx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="767"/>
+            <point key="canvasLocation" x="2716" y="766.86656671664173"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="hXS-WO-7bT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PTU-UJ-ydz" customClass="YDRootNavigationController" customModule="YDRootNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="folder" catalog="system" selectedImage="folder.fill" id="nuw-u9-UX0"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="z9p-1s-dpt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1oo-4X-4D7" kind="relationship" relationship="rootViewController" id="cGT-ed-ykv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6se-UT-zp4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.399999999999999" y="854.1229385307347"/>
         </scene>
     </scenes>
     <resources>
+        <image name="folder" catalog="system" width="128" height="96"/>
+        <image name="folder.fill" catalog="system" width="128" height="96"/>
         <image name="homepodmini" catalog="system" width="128" height="105"/>
         <image name="homepodmini.fill" catalog="system" width="128" height="105"/>
         <systemColor name="groupTableViewBackgroundColor">

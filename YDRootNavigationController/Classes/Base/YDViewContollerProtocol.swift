@@ -22,11 +22,11 @@ import UIKit
 }
 
 extension UIViewController: YDViewControllerProtocol {
-    open var isHidesBackItem: Bool { false }
-    open var prefersNavigationBarHidden: Bool { false }
-    open var isHidesBottomBarWhenPushed: Bool { true }
-    open var isInteractivePopGestureEnabled: Bool { true }
-    open var isFullScreenPopGestureEnabled: Bool { false }
+    open var isHidesBackItem: Bool { YDRootNavigationController.appAppearance.isHidesBackItem }
+    open var prefersNavigationBarHidden: Bool { YDRootNavigationController.appAppearance.prefersNavigationBarHidden }
+    open var isHidesBottomBarWhenPushed: Bool { YDRootNavigationController.appAppearance.isHidesBottomBarWhenPushed }
+    open var isInteractivePopGestureEnabled: Bool { YDRootNavigationController.appAppearance.isInteractivePopGestureEnabled }
+    open var isFullScreenPopGestureEnabled: Bool { YDRootNavigationController.appAppearance.isFullScreenPopGestureEnabled }
     open var backItem: UIBarButtonItem? { nil }
     open var backItemType: YDBackItemType { .default() }
     open var navigationBarAppearence: YDNavigationBarAppearence {
@@ -76,6 +76,8 @@ public extension UINavigationController {
 public class YDNavigationBarAppearence: NSObject {
     /// 导航栏背景颜色，如果使用全局默认则不传
     private(set) var backgroundColor: UIColor?
+    /// 导航栏背景图片，如果使用全局默认则不传
+    private(set) var backgroundImage: UIImage?
     /// 导航栏阴影（即底部分割线）颜色，如果使用全局默认则不传
     private(set) var shadowColor: UIColor?
     /// 导航栏标题样式，如果使用全局默认样式则不传
@@ -84,10 +86,12 @@ public class YDNavigationBarAppearence: NSObject {
     /// 初始化方法
     /// - Parameters:
     ///   - backgroundColor: 导航栏背景颜色，如果使用全局默认则不传
+    ///   - backgroundImage: 导航栏背景图片，如果使用全局默认则不传
     ///   - titleTextAttributes: 导航栏标题样式，如果使用全局默认样式则不传
     ///   - shadowColor: 导航栏阴影（即底部分割线）颜色，如果使用全局默认则不传
-    public init(backgroundColor: UIColor? = nil, titleTextAttributes: [NSAttributedString.Key: Any]? = nil, shadowColor: UIColor? = nil) {
+    public init(backgroundColor: UIColor? = nil, backgroundImage: UIImage? = nil, titleTextAttributes: [NSAttributedString.Key: Any]? = nil, shadowColor: UIColor? = nil) {
         self.backgroundColor = backgroundColor
+        self.backgroundImage = backgroundImage
         self.titleTextAttributes = titleTextAttributes
         self.shadowColor = shadowColor
     }

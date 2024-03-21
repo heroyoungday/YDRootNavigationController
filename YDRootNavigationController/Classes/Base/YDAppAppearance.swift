@@ -7,19 +7,36 @@
 
 import UIKit
 
+/// 全局默认配置
 public protocol YDAppAppearanceProtocol {
     var barItemNormalTitleTextAttributes: [NSAttributedString.Key : Any]? { get }
     var barItemHighlightedTitleTextAttributes: [NSAttributedString.Key : Any]? { get }
     var barItemDisableTitleTextAttributes: [NSAttributedString.Key : Any]? { get }
+    /// 导航栏标题文字属性
     var titleTextAttributes: [NSAttributedString.Key: Any]? { get }
+    /// 导航栏背景颜色
     var navigationBarBackgroundColor: UIColor? { get }
+    /// 导航栏背景图片
+    var navigationBarBackgroundImage: UIImage? { get }
     var navigationBarShadowColor: UIColor? { get }
+    /// 工具栏背景颜色
     var toolBarBackgroundColor: UIColor? { get }
     var toolBarShadowColor: UIColor? { get }
     var tabBarBackgroundColor: UIColor? { get }
     var tabBarShadowColor: UIColor? { get }
+    /// 返回按钮图片
     var backItemImage: UIImage? { get }
+    /// 返回按钮图片内边距
     var backItemImageInsets: UIEdgeInsets? { get }
+    var isHidesBackItem: Bool { get }
+    /// 设置是否隐藏导航栏（默认关闭）
+    var prefersNavigationBarHidden: Bool { get }
+    /// （默认打开）设置导航栏控制器push时，是否隐藏标签栏（当导航栏控制器是标签栏控制器的子控制器时）
+    var isHidesBottomBarWhenPushed: Bool { get }
+    /// 设置侧滑返回手势是否开启（默认打开）
+    var isInteractivePopGestureEnabled: Bool { get }
+    /// 设置全屏返回手势是否开启（默认关闭）
+    var isFullScreenPopGestureEnabled: Bool { get }
 }
 
 public extension YDAppAppearanceProtocol {
@@ -28,6 +45,7 @@ public extension YDAppAppearanceProtocol {
     var barItemDisableTitleTextAttributes: [NSAttributedString.Key : Any]? { nil }
     var titleTextAttributes: [NSAttributedString.Key: Any]? { nil }
     var navigationBarBackgroundColor: UIColor? { nil }
+    var navigationBarBackgroundImage: UIImage? { nil }
     var navigationBarShadowColor: UIColor? { nil }
     var toolBarBackgroundColor: UIColor? { nil }
     var toolBarShadowColor: UIColor? { nil }
@@ -35,7 +53,11 @@ public extension YDAppAppearanceProtocol {
     var tabBarShadowColor: UIColor? { nil }
     var backItemImage: UIImage? { nil }
     var backItemImageInsets: UIEdgeInsets? { nil }
-    
+    var isHidesBackItem: Bool { false }
+    var prefersNavigationBarHidden: Bool { false }
+    var isHidesBottomBarWhenPushed: Bool { true }
+    var isInteractivePopGestureEnabled: Bool { true }
+    var isFullScreenPopGestureEnabled: Bool { false }
     
     func configure() {
         YDRootNavigationController.appAppearance = self
@@ -61,8 +83,10 @@ public extension YDAppAppearanceProtocol {
             let navBarApp = UINavigationBarAppearance()
             // 移除毛玻璃效果
             navBarApp.configureWithOpaqueBackground()
-            // 设置背景颜色
-            if let navigationBarBackgroundColor = self.navigationBarBackgroundColor {
+            if let navigationBarBackgroundImage = self.navigationBarBackgroundImage {// 设置背景图片
+                navBarApp.backgroundImage = navigationBarBackgroundImage
+                navBarApp.backgroundColor = .clear
+            } else if let navigationBarBackgroundColor = self.navigationBarBackgroundColor {// 设置背景颜色
                 navBarApp.backgroundColor = navigationBarBackgroundColor
             }
             
@@ -116,10 +140,12 @@ public extension YDAppAppearanceProtocol {
                 // Fallback on earlier versions
             }
         } else {
-            if let navigationBarBackgroundColor = self.navigationBarBackgroundColor {
+            if let navigationBarBackgroundImage = self.navigationBarBackgroundImage {
+                UINavigationBar.appearance().setBackgroundImage(navigationBarBackgroundImage, for: .default)
+                UINavigationBar.appearance().backgroundColor = .clear
+            } else if let navigationBarBackgroundColor = self.navigationBarBackgroundColor {
                 UINavigationBar.appearance().barTintColor = navigationBarBackgroundColor
             }
-            
             if let image = self.backItemImage {
                 UINavigationBar.appearance().backIndicatorImage = image
                 UINavigationBar.appearance().backIndicatorTransitionMaskImage = image

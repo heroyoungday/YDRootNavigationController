@@ -1,23 +1,20 @@
 //
-//  BackgroundColorController.swift
-//  YDRootNavigationController _Example
+//  FolderController.swift
+//  YDRootNavigationController_Example
 //
-//  Created by One on 2024/3/16.
-//  Copyright © 2024 jsone All rights reserved.
+//  Created by One on 2024/3/20.
+//  Copyright © 2024 CocoaPods. All rights reserved.
 //
 
 import UIKit
 
-class BackgroundColorController: UIViewController {
+class FolderController: UIViewController {
 
-    override var navigationBarAppearence: YDNavigationBarAppearence {
-        YDNavigationBarAppearence(backgroundColor: .red)
-    }
-    
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "backgroundColor"
-        // Do any additional setup after loading the view.
+        title = "Folder"
+        view.backgroundColor = .randomColor
     }
     
 

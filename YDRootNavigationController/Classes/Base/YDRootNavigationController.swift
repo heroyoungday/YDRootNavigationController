@@ -245,8 +245,6 @@ extension YDRootNavigationController: UINavigationControllerDelegate {
                 setInteractivePopGesture(viewController.isInteractivePopGestureEnabled)
             }
         }
-        
-        debugPrint("isInteractivePopGestureEnabled:\(viewController.isInteractivePopGestureEnabled), isFullScreenPopGestureEnabled:\(viewController.isFullScreenPopGestureEnabled)")
     }
     
     open func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
@@ -334,8 +332,11 @@ public extension UINavigationBar {
     func setAppearence(_ appearence: YDNavigationBarAppearence, needDefault: Bool = true) {
         if #available(iOS 13.0, *) {
             let navApp = (needDefault ? UINavigationBar.appearance() : self).standardAppearance.copy()
-            if let backgroundColor = appearence.backgroundColor {
+            if let backgroundImage = appearence.backgroundImage {
+                navApp.backgroundImage = backgroundImage
+            } else if let backgroundColor = appearence.backgroundColor {
                 navApp.backgroundColor = backgroundColor
+                navApp.backgroundImage = nil
             }
             if let titleTextAttributes = appearence.titleTextAttributes {
                 navApp.titleTextAttributes = titleTextAttributes
@@ -360,7 +361,9 @@ public extension UINavigationBar {
             } else {
                 shadowImage = UINavigationBar.appearance().shadowImage
             }
-            if let backgroundColor = appearence.backgroundColor {
+            if let backgroundImage = appearence.backgroundImage {
+                setBackgroundImage(backgroundImage, for: .default)
+            } else if let backgroundColor = appearence.backgroundColor {
                 if backgroundColor == .clear {
                     isTranslucent = true
                     setBackgroundImage(UIImage(), for: .default)
