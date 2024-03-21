@@ -44,9 +44,9 @@ it, simply add the following line to your Podfile:
 pod 'YDRootNavigationController'
 ```
 ## Usage
-###全局默认样式配置（Global default style configuration）
-1、创建一个类用来实现YDAppAppearanceProtocol协议
-```
+#####全局默认样式配置（Global default style configuration）
+1.创建一个类用来实现YDAppAppearanceProtocol协议
+```swift
 class MyAppAppearance: YDAppAppearanceProtocol {
     var navigationBarBackgroundColor: UIColor? { .white }
     var navigationBarShadowColor: UIColor? { .clear }
@@ -56,8 +56,8 @@ class MyAppAppearance: YDAppAppearanceProtocol {
 }
 
 ```
-2、在AppDelegate中调用
-```
+2.在AppDelegate中调用
+```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // 全局默认样式配置
         MyAppAppearance().configure()
@@ -65,9 +65,53 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
     }
 }
 ```
-###视图控制器自定义样式配置（View controller custom style configuration）
+#####视图控制器自定义样式配置（View controller custom style configuration）
+1.导航栏控制器设置为YDRootNavigationController或继承YDRootNavigationController的类
+-代码
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    self.window?.rootViewController = YDRootNavigationController()
+    return true
+}
+```
+-`Interface Builder`
+![scrreecap](./ScreenShot/IB设置YDRootNavigationController.gif)
+1.导航栏样式配置
 
-###原生返回手势（Native pop gesture）
+![scrreecap](./ScreenShot/标题文字属性.gif)
+![scrreecap](./ScreenShot/导航栏背景颜色.gif)
+![scrreecap](./ScreenShot/导航栏阴影.gif)
+
+2.自定义返回按钮点击事件
+```swift
+class ViewController: UIViewController {
+    override func backItemAction(_ sender: Any?) {
+        let alert = UIAlertController(title: "提示", message: "是否确定退出？", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { [weak self] action in
+            self?.navigationController?.popViewController(animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "取消", style: .default))
+        present(alert, animated: true)
+    }
+}
+```
+![scrreecap](./ScreenShot/返回按钮点击事件.gif)
+3.自定义返回按钮
+```swift
+class ViewController: UIViewController {
+    override var isHidesBackItem: Bool { true }
+}
+```
+![scrreecap](./ScreenShot/返回按钮样式.gif)
+4.返回按钮隐藏
+```swift
+class ViewController: UIViewController {
+    override var isHidesBackItem: Bool { true }
+}
+```
+![scrreecap](./ScreenShot/返回按钮隐藏.gif)
+
+#####原生返回手势（Native pop gesture）
 ```swift
 class ViewController: UIViewController {
     // 默认设置
@@ -81,7 +125,7 @@ class ViewController: UIViewController {
 }
 ```
 ![scrreecap](./ScreenShot/返回手势.gif)
-###全屏返回手势（Native pop gesture）
+#####全屏返回手势（Full Screen pop gesture）
 ```swift
 class ViewController: UIViewController {
     // 默认设置
@@ -95,16 +139,29 @@ class ViewController: UIViewController {
 }
 ```
 ![scrreecap](./ScreenShot/全屏返回手势.gif)
-
-![scrreecap](./ScreenShot/标签栏隐藏.gif)
-![scrreecap](./ScreenShot/标题文字属性.gif)
-![scrreecap](./ScreenShot/导航栏背景颜色.gif)
-![scrreecap](./ScreenShot/导航栏阴影.gif)
-![scrreecap](./ScreenShot/返回按钮点击事件.gif)
-![scrreecap](./ScreenShot/返回按钮样式.gif)
-![scrreecap](./ScreenShot/返回按钮隐藏.gif)
-
+#####导航栏隐藏（Navigation bar hidden）
+```swift
+class ViewController: UIViewController {
+    override var prefersNavigationBarHidden: Bool { true }
+}
+```
 ![scrreecap](./ScreenShot/隐藏导航栏.gif)
+#####push时标签栏隐藏（is Hides Bottom Bar When Pushed）
+```swift
+class ViewController: UIViewController {
+    override var isHidesBottomBarWhenPushed: Bool { true }
+}
+```
+![scrreecap](./ScreenShot/标签栏隐藏.gif)
+
+#####状态栏设置（Status bar settings）
+```swift
+class ViewController: UIViewController {
+    override var preferredStatusBarStyle: UIStatusBarStyle { .default }
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation { .none }
+    override var prefersStatusBarHidden: Bool { false }
+}
+```
 ![scrreecap](./ScreenShot/状态栏样式.gif)
 
 
