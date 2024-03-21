@@ -44,7 +44,7 @@ it, simply add the following line to your Podfile:
 pod 'YDRootNavigationController'
 ```
 ## Usage
-* 全局默认样式配置（Global default style configuration）
+### 全局默认样式配置（Global default style configuration）
 
 1.创建一个类用来实现YDAppAppearanceProtocol协议
 ```swift
