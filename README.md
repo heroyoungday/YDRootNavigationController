@@ -44,12 +44,68 @@ it, simply add the following line to your Podfile:
 pod 'YDRootNavigationController'
 ```
 ## Usage
+###全局默认样式配置（Global default style configuration）
+1、创建一个类用来实现YDAppAppearanceProtocol协议
+```
+class MyAppAppearance: YDAppAppearanceProtocol {
+    var navigationBarBackgroundColor: UIColor? { .white }
+    var navigationBarShadowColor: UIColor? { .clear }
+    var titleTextAttributes: [NSAttributedString.Key : Any]? { [NSAttributedString.Key.foregroundColor: UIColor.blue] }
+    var backItemImage: UIImage? { UIImage(named: "nav_back_black_button") }
+    var backItemImageInsets: UIEdgeInsets? { UIEdgeInsets(top: 0, left: -6, bottom: 0, right: 0) }
+}
+
+```
+2、在AppDelegate中调用
+```
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // 全局默认样式配置
+        MyAppAppearance().configure()
+        return true
+    }
+}
+```
+###视图控制器自定义样式配置（View controller custom style configuration）
+
+###原生返回手势（Native pop gesture）
 ```swift
 class ViewController: UIViewController {
-    override var isInteractivePopGestureEnabled: Bool { false }
+    // 默认设置
+    override var isInteractivePopGestureEnabled: Bool { interactivePopGesture }
+    var interactivePopGesture: Bool = true {
+        didSet {
+            // 动态设置
+            interactivePopGesture(interactivePopGesture)
+        }
+    }
 }
 ```
 ![scrreecap](./ScreenShot/返回手势.gif)
+###全屏返回手势（Native pop gesture）
+```swift
+class ViewController: UIViewController {
+    // 默认设置
+    override var isFullScreenPopGestureEnabled: Bool { fullScreenPopGesture }
+    var fullScreenPopGesture: Bool = true {
+        didSet {
+            // 动态设置
+            fullScreenPopGesture(fullScreenPopGesture)
+        }
+    }
+}
+```
+![scrreecap](./ScreenShot/全屏返回手势.gif)
+
+![scrreecap](./ScreenShot/标签栏隐藏.gif)
+![scrreecap](./ScreenShot/标题文字属性.gif)
+![scrreecap](./ScreenShot/导航栏背景颜色.gif)
+![scrreecap](./ScreenShot/导航栏阴影.gif)
+![scrreecap](./ScreenShot/返回按钮点击事件.gif)
+![scrreecap](./ScreenShot/返回按钮样式.gif)
+![scrreecap](./ScreenShot/返回按钮隐藏.gif)
+
+![scrreecap](./ScreenShot/隐藏导航栏.gif)
+![scrreecap](./ScreenShot/状态栏样式.gif)
 
 
 ## Author
