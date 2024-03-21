@@ -98,7 +98,7 @@ class ViewController: UIViewController {
 
 标题文字属性
 
-![scrreecap](./ScreenShot/标题文字属性.gif)
+![标题文字属性](./ScreenShot/标题文字属性.gif)
 
 导航栏背景颜色
 
