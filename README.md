@@ -92,10 +92,14 @@ class ViewController: UIViewController {
     }
 }
 ```
+
+标题文字属性
 ![scrreecap](./ScreenShot/标题文字属性.gif)
 
+导航栏背景颜色
 ![scrreecap](./ScreenShot/导航栏背景颜色.gif)
 
+导航栏阴影
 ![scrreecap](./ScreenShot/导航栏阴影.gif)
 
 2.自定义返回按钮点击事件
