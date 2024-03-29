@@ -128,7 +128,12 @@ class ViewController: UIViewController {
 
 ```swift
 class ViewController: UIViewController {
-    override var isHidesBackItem: Bool { true }
+    // title只显示标题
+    override var backItemType: YDBackItemType { .title("Back") }
+    // title只显示图标
+    override var backItemType: YDBackItemType { .image(UIImage(named: "nav_circleback_button"), imageInsets: UIEdgeInsets(top: 0, left: -6, bottom: 0, right: 0)) }
+    // title图片加标题
+    override var backItemType: YDBackItemType { .all("title", titleTextAttributes: [NSAttributedString.Key.foregroundColor : UIColor.randomColor], image: UIImage(named: "nav_back_black_button"), contentInsets: UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)) }
 }
 ```
 ![scrreecap](./ScreenShot/返回按钮样式.gif)
