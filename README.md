@@ -124,7 +124,7 @@ class ViewController: UIViewController {
 ```
 ![scrreecap](./ScreenShot/返回按钮点击事件.gif)
 
-#### 自定义返回按钮
+#### 定制返回按钮
 
 ```swift
 class ViewController: UIViewController {
@@ -143,6 +143,23 @@ class ViewController: UIViewController {
 ```swift
 class ViewController: UIViewController {
     override var isHidesBackItem: Bool { true }
+}
+```
+![scrreecap](./ScreenShot/返回按钮隐藏.gif)
+
+#### 自定义返回按钮
+```swift
+class ViewController: UIViewController {
+    override var backItem: UIBarButtonItem? { UIBarButtonItem(title: "BackItem", style: .plain, target: self, action: #selector(backItemAction)) }
+  
+    override func backItemAction(_ sender: Any?) {
+        let alert = UIAlertController(title: "提示", message: "是否确定退出？", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "确定", style: .default, handler: { [weak self] action in
+            self?.navigationController?.popViewController(animated: true)
+        }))
+        alert.addAction(UIAlertAction(title: "取消", style: .default))
+        present(alert, animated: true)
+    }
 }
 ```
 ![scrreecap](./ScreenShot/返回按钮隐藏.gif)
