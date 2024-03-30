@@ -8,16 +8,23 @@
 import UIKit
 
 @objc public protocol YDViewControllerProtocol {
+    /// 是否隐藏返回按钮
     var isHidesBackItem: Bool { get }
+    /// 是否隐藏导航栏
     var prefersNavigationBarHidden: Bool { get }
+    /// push时是否隐藏标签栏
     var isHidesBottomBarWhenPushed: Bool { get }
     /// 设置侧滑返回手势是否开启（用于控制器显示前的默认设置）
     var isInteractivePopGestureEnabled: Bool { get }
     /// 设置全屏返回手势是否开启（用于控制器显示前的默认设置）
     var isFullScreenPopGestureEnabled: Bool { get }
+    /// 自定义返回按钮
     var backItem: UIBarButtonItem? { get }
+    /// 定制返回按钮样式
     var backItemType: YDBackItemType { get }
+    /// 导航栏样式（背景颜色、标题文字属性、阴影颜色）
     var navigationBarAppearence: YDNavigationBarAppearence { get }
+    /// 自定义返回按钮点击事件
     @objc func backItemAction(_ sender: Any?)
 }
 

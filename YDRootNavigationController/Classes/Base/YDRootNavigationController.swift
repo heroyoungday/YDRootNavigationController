@@ -8,7 +8,7 @@
 import UIKit
 
 open class YDRootNavigationController: UINavigationController {
-    
+    /// 全局默认设置
     static var appAppearance: YDAppAppearanceProtocol = YDAppAppearance()
     private let kBackItemTag = 1000
     /// 供外部设置实现delegate

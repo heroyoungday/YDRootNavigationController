@@ -10,7 +10,7 @@ import UIKit
 
 class MyAppAppearance: YDAppAppearanceProtocol {
     var navigationBarBackgroundColor: UIColor? { .white }
-    var navigationBarShadowColor: UIColor? { .clear }
+//    var navigationBarShadowColor: UIColor? { .clear }
     var titleTextAttributes: [NSAttributedString.Key : Any]? { [NSAttributedString.Key.foregroundColor: UIColor.blue] }
     var backItemImage: UIImage? { UIImage(named: "nav_back_black_button") }
     var backItemImageInsets: UIEdgeInsets? { UIEdgeInsets(top: 0, left: -6, bottom: 0, right: 0) }
