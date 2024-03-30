@@ -41,7 +41,7 @@ class ExamplesController: UITableViewController {
         case 0:
             return 6
         case 1:
-            return 6
+            return 7
         default:
             return 0
         }

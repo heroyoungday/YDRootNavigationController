@@ -11,6 +11,7 @@ import MapKit
 
 class MapController: UIViewController {
 
+    override var navigationBarAppearence: YDNavigationBarAppearence { YDNavigationBarAppearence(backgroundImage: UIImage.gradient(colors: [UIColor.cyan, UIColor.purple], type: .leftToRight, size: CGSize(width: Screen.width, height: Screen.navigationBarHeight))?.addCorner(YDRectCorner(bottomLeft: 20, bottomRight: 20))) }
     var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
