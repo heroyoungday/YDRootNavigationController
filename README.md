@@ -18,7 +18,9 @@
 * Support customizing the click event of the backBarItem.
 * Support `Interface Builder`.
 
+![scrreecap](./ScreenShot/地图与返回手势.gif)
 
+![scrreecap](./ScreenShot/UIScrollView与返回手势.gif)
 
 * 支持设置全局统一默认的导航栏样式（例如：导航栏背景颜色、底部分割线颜色、标题文字属性），同时支持每个视图控制器可以自定义导航栏样式
 * 支持全局默认设置是否开启系统自带的返回手势，同时支持视图控制器自己默认设置和动态设置
@@ -162,7 +164,7 @@ class ViewController: UIViewController {
     }
 }
 ```
-![scrreecap](./ScreenShot/返回按钮隐藏.gif)
+![scrreecap](./ScreenShot/自定义返回按钮.gif)
 
 #### 原生返回手势（Native pop gesture）
 
