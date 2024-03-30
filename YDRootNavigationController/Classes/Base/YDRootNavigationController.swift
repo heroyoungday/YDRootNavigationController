@@ -334,6 +334,7 @@ public extension UINavigationBar {
             let navApp = (needDefault ? UINavigationBar.appearance() : self).standardAppearance.copy()
             if let backgroundImage = appearence.backgroundImage {
                 navApp.backgroundImage = backgroundImage
+                navApp.backgroundColor = nil
             } else if let backgroundColor = appearence.backgroundColor {
                 navApp.backgroundColor = backgroundColor
                 navApp.backgroundImage = nil
