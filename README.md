@@ -20,8 +20,6 @@
 
 ![scrreecap](./ScreenShot/地图与返回手势.gif)
 
-![scrreecap](./ScreenShot/UIScrollView与返回手势.gif)
-
 * 支持设置全局统一默认的导航栏样式（例如：导航栏背景颜色、底部分割线颜色、标题文字属性），同时支持每个视图控制器可以自定义导航栏样式
 * 支持全局默认设置是否开启系统自带的返回手势，同时支持视图控制器自己默认设置和动态设置
 * 支持全局默认设置是否开启全屏返回手势，同时支持视图控制器自己默认设置和动态设置
@@ -32,6 +30,8 @@
 * 支持自定义返回按钮
 * 支持自定义返回按钮的点击事件
 * 支持`Interface Builder`
+* 
+![scrreecap](./ScreenShot/UIScrollView与返回手势.gif)
 
 ## Requirements
 
