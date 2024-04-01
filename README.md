@@ -30,7 +30,7 @@
 * 支持自定义返回按钮
 * 支持自定义返回按钮的点击事件
 * 支持`Interface Builder`
-* 
+  
 ![scrreecap](./ScreenShot/UIScrollView与返回手势.gif)
 
 ## Requirements
@@ -109,6 +109,14 @@ class ViewController: UIViewController {
 导航栏阴影
 
 ![scrreecap](./ScreenShot/导航栏阴影.gif)
+
+##### 导航栏背景图片
+```swift
+class ViewController: UIViewController {
+    override var navigationBarAppearence: YDNavigationBarAppearence { YDNavigationBarAppearence(backgroundImage: UIImage.gradient(colors: [UIColor.systemPink, UIColor.purple], type: .leftToRight, size: CGSize(width: Screen.width, height: Screen.navigationBarHeight))?.addCorner(YDRectCorner(bottomLeft: 20, bottomRight: 20))) }
+}
+```
+![scrreecap](./ScreenShot/导航栏背景图片.gif)
 
 #### 自定义返回按钮点击事件
 
